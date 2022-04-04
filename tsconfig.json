@@ -1,6 +1,25 @@
 {
   "extends": "@graphprotocol/graph-ts/tsconfig",
+  // "extends": "assemblyscript/std/assembly.json",
+  // "include": [
+  //   "./**/*.ts"
+  // ],
   "compilerOptions": {
-    "types": ["@graphprotocol/graph-ts"]
+    "types": ["node", "@graphprotocol/graph-ts"],
+    "typeRoots": [ "node_modules/@types" ]
   }
 }
+  
+
+
+// {
+//   "extends": "@graphprotocol/graph-ts/tsconfig",
+//   "compilerOptions": {
+//     "types": ["@graphprotocol/graph-ts"],
+//     "skipLibCheck": true,      
+//   },
+//   "typeRoots": [
+//     "node_modules/@types",
+//     "src/typings"
+//   ]
+// }
